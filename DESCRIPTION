@@ -25,7 +25,6 @@ Imports:
     rARPACK,
     mixlm,
     MASS,
-    georob,
     mvtnorm,
     optimx,
     matrixcalc,
