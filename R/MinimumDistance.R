@@ -264,7 +264,7 @@ MinimumDistance <- function(DatR, VarR, DatY, VarY, variogram.model,
   Location_x <- c(DatR@coords[,1], DatY@coords[,1]);
   Location_y <- c(DatR@coords[,2], DatY@coords[,2]);
 
-  Sampling_Region <- spatstat::owin(xrange=c(min(Location_x)-1, max(Location_x)+1),
+  Sampling_Region <- owin(xrange=c(min(Location_x)-1, max(Location_x)+1),
                                     yrange=c(min(Location_y)-1, max(Location_y)+1));
   Location <- spatstat::ppp(x =Location_x, y = Location_y, window = Sampling_Region);
   Density <- density(Location);
